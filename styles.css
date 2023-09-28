@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#canvas {
+    width: 600px;
+    height: 600px;
+    background-color: #e9ecef;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ced4da;
+}
+
+.canvas-column {
+    padding-right: 30px;
+}
+
+.shape {
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.circle {
+    background-color: purple;
+}
+
+.rectangle {
+    background-color: green;
+}
+
+.square {
+    background-color: red;
+}
+
+.triangle {
+    background-color: yellow;
+}
+
+
+.panel-column {
+    padding-left: 60px;
+}
+
+.side-panel {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+}
+
+.controls {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+}
+
+.controls .form-group {
+    margin-bottom: 20px;
+}
+
+#sidePanel h4 {
+    border-bottom: 1px solid #ced4da;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}

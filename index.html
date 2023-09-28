@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Drawer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <!-- Draw Information Input Section -->
+            <div class="col-md-3">
+                <div class="controls">
+                    <!-- Rectangle Inputs -->
+                    <div class="form-group">
+                        <label for="rectangleWidth">Rectangle Width:</label>
+                        <input class="form-control" id="rectangleWidth" type="number" placeholder="Width">
+                    </div>
+                    <div class="form-group">
+                        <label for="rectangleHeight">Rectangle Height:</label>
+                        <input class="form-control" id="rectangleHeight" type="number" placeholder="Height">
+                    </div>
+                    <button id="insertRectangle" class="btn btn-primary mb-3">Insert Rectangle</button>
+
+                    <!-- Square Inputs -->
+                    <div class="form-group">
+                        <label for="squareSide">Square Side Length:</label>
+                        <input class="form-control" id="squareSide" type="number" placeholder="Side Length">
+                    </div>
+                    <button id="insertSquare" class="btn btn-primary mb-3">Insert Square</button>
+
+                    <!-- Circle Inputs -->
+                    <div class="form-group">
+                        <label for="circleRadius">Circle Radius:</label>
+                        <input class="form-control" id="circleRadius" type="number" placeholder="Radius">
+                    </div>
+                    <button id="insertCircle" class="btn btn-primary mb-3">Insert Circle</button>
+
+                    <!-- Triangle Inputs -->
+                    <div class="form-group">
+                        <label for="triangleHeight">Isosceles Right Triangle Height:</label>
+                        <input class="form-control" id="triangleHeight" type="number" placeholder="Height">
+                    </div>
+                    <button id="insertTriangle" class="btn btn-primary">Insert Triangle</button>
+                </div>
+            </div>
+
+            <!-- Canvas -->
+            <div class="col-md-6 canvas-column">
+                <div id="canvas"></div>
+            </div>
+
+            <!-- Shape Details Panel -->
+            <div class="col-md-3 panel-column">
+                <div id="sidePanel" class="side-panel">
+                    <h4>Shape Details:</h4>
+                    <p><strong>Shape Name:</strong> <span id="shapeName"></span></p>
+                    <p><strong>Width:</strong> <span id="shapeWidth"></span></p>
+                    <p><strong>Height:</strong> <span id="shapeHeight"></span></p>
+                    <p><strong>Radius:</strong> <span id="shapeRadius"></span></p>
+                    <p><strong>Area:</strong> <span id="shapeArea"></span></p>
+                    <p><strong>Perimeter:</strong> <span id="shapePerimeter"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
